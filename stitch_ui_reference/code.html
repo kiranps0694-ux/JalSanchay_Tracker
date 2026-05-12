@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Welcome to Jal-Sanchay</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f9f9ff",
+                        "surface-dim": "#d4daea",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#5ff393",
+                        "inverse-surface": "#2a303d",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#0056d2",
+                        "on-secondary-container": "#006c71",
+                        "tertiary": "#005228",
+                        "primary-fixed-dim": "#b2c5ff",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#006d37",
+                        "surface-variant": "#dde2f3",
+                        "on-primary-fixed": "#001847",
+                        "tertiary-fixed": "#6bfe9c",
+                        "surface-container-low": "#f1f3ff",
+                        "surface-bright": "#f9f9ff",
+                        "secondary-container": "#00f4fe",
+                        "on-background": "#161c27",
+                        "on-surface-variant": "#424654",
+                        "secondary-fixed": "#63f7ff",
+                        "on-primary-fixed-variant": "#0040a1",
+                        "on-tertiary-fixed-variant": "#005228",
+                        "secondary": "#00696e",
+                        "primary-fixed": "#dae2ff",
+                        "surface-container": "#e8eeff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#ccd8ff",
+                        "tertiary-fixed-dim": "#4ae183",
+                        "surface-tint": "#0056d2",
+                        "surface-container-high": "#e3e8f9",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#0040a1",
+                        "background": "#f9f9ff",
+                        "surface-container-highest": "#dde2f3",
+                        "secondary-fixed-dim": "#00dce5",
+                        "outline-variant": "#c3c6d6",
+                        "on-secondary-fixed": "#002021",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "on-surface": "#161c27",
+                        "on-secondary-fixed-variant": "#004f53",
+                        "inverse-on-surface": "#ecf0ff",
+                        "on-tertiary-fixed": "#00210c",
+                        "outline": "#737785",
+                        "inverse-primary": "#b2c5ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "20px",
+                        "margin-desktop": "40px",
+                        "lg": "24px",
+                        "unit": "8px",
+                        "xl": "32px",
+                        "md": "16px",
+                        "xs": "4px",
+                        "sm": "8px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f9f9ff; overflow-x: hidden; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 64, 161, 0.05);
+        }
+        .btn-gradient {
+            background: linear-gradient(180deg, #00f4fe 0%, #0040a1 100%);
+            box-shadow: 0 4px 15px rgba(0, 244, 254, 0.3);
+        }
+        .vibrant-blob {
+            position: absolute;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-background min-h-screen relative flex flex-col items-center justify-center">
+<!-- Background Accents -->
+<div class="vibrant-blob w-[400px] h-[400px] bg-secondary-container rounded-full top-[-100px] left-[-100px]"></div>
+<div class="vibrant-blob w-[500px] h-[500px] bg-primary-fixed-dim rounded-full bottom-[-150px] right-[-150px]"></div>
+<main class="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl flex flex-col items-center justify-center min-h-[90vh]">
+<div class="w-full max-w-4xl grid gap-xl items-center flex">
+<!-- Content Section -->
+<div class="flex flex-col space-y-lg text-center lg:text-center">
+<div class="inline-flex items-center space-x-sm self-center bg-secondary-container/20 px-md py-xs rounded-full border border-secondary-container/30 lg:self-center">
+<span class="material-symbols-outlined text-secondary text-[20px]" data-icon="waves">waves</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container uppercase tracking-widest">Sustainability First</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary leading-tight">
+                    Welcome to <span class="text-secondary">Jal-Sanchay</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mx-auto">
+                    Empowering households to conserve every drop. Track your rainwater harvesting, monitor storage levels, and discover smarter ways to sustain our most precious resource.
+                </p>
+<div class="flex flex-col sm:flex-row gap-md pt-md justify-center lg:justify-center">
+<button class="btn-gradient font-label-sm text-label-sm text-on-primary px-xl py-lg rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center space-x-sm group">
+<span>Get Started</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="glass-card font-label-sm text-label-sm text-primary px-xl py-lg rounded-xl transition-all duration-300 hover:bg-white/90">
+                        Learn More
+                    </button>
+</div>
+<!-- Stats/Social Proof -->
+</div>
+<!-- Illustration/Image Section -->
+</div>
+</main>
+<!-- Footer Quote/Minimalist Nav -->
+<footer class="w-full max-w-7xl mx-auto px-margin-mobile py-lg mt-auto flex flex-col md:flex-row items-center justify-between border-t border-outline-variant/20">
+<p class="font-label-sm text-label-sm text-on-surface-variant italic mb-md md:mb-0">
+            "Water is the driving force of all nature." — Leonardo da Vinci
+        </p>
+<div class="flex space-x-lg text-on-surface-variant font-label-sm text-label-sm">
+<a class="hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms</a>
+<a class="hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+</footer>
+</body></html>
